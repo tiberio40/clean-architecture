@@ -1,0 +1,52 @@
+﻿C:\Users\frena\Documents\Ditech\ScaffoldingAPI\Infrastructure\Configurations\MongoDbSettings.cs
+C:\Users\frena\Documents\Ditech\ScaffoldingAPI\Infrastructure\Data\MongoDbContext.cs
+C:\Users\frena\Documents\Ditech\ScaffoldingAPI\Infrastructure\Data\SeedDb.cs
+C:\Users\frena\Documents\Ditech\ScaffoldingAPI\Infrastructure\Data\SqlDbContext.cs
+C:\Users\frena\Documents\Ditech\ScaffoldingAPI\Infrastructure\Migrations\20240724054732_initialMigration.cs
+C:\Users\frena\Documents\Ditech\ScaffoldingAPI\Infrastructure\Migrations\20240724054732_initialMigration.Designer.cs
+C:\Users\frena\Documents\Ditech\ScaffoldingAPI\Infrastructure\Migrations\20240724161303_addTableConfigTheme.cs
+C:\Users\frena\Documents\Ditech\ScaffoldingAPI\Infrastructure\Migrations\20240724161303_addTableConfigTheme.Designer.cs
+C:\Users\frena\Documents\Ditech\ScaffoldingAPI\Infrastructure\Migrations\20240725151423_alteTableUser.cs
+C:\Users\frena\Documents\Ditech\ScaffoldingAPI\Infrastructure\Migrations\20240725151423_alteTableUser.Designer.cs
+C:\Users\frena\Documents\Ditech\ScaffoldingAPI\Infrastructure\Migrations\20240802052358_addTableFile.cs
+C:\Users\frena\Documents\Ditech\ScaffoldingAPI\Infrastructure\Migrations\20240802052358_addTableFile.Designer.cs
+C:\Users\frena\Documents\Ditech\ScaffoldingAPI\Infrastructure\Migrations\20240805161026_createMetaTypes.cs
+C:\Users\frena\Documents\Ditech\ScaffoldingAPI\Infrastructure\Migrations\20240805161026_createMetaTypes.Designer.cs
+C:\Users\frena\Documents\Ditech\ScaffoldingAPI\Infrastructure\Migrations\20240806135956_MarkegintAndStatusTableAdded.cs
+C:\Users\frena\Documents\Ditech\ScaffoldingAPI\Infrastructure\Migrations\20240806135956_MarkegintAndStatusTableAdded.Designer.cs
+C:\Users\frena\Documents\Ditech\ScaffoldingAPI\Infrastructure\Migrations\20240808154631_changeTypeOAuthIdFromMaketingTableForString.cs
+C:\Users\frena\Documents\Ditech\ScaffoldingAPI\Infrastructure\Migrations\20240808154631_changeTypeOAuthIdFromMaketingTableForString.Designer.cs
+C:\Users\frena\Documents\Ditech\ScaffoldingAPI\Infrastructure\Migrations\20240808202303_saveNetSuiteInfo.cs
+C:\Users\frena\Documents\Ditech\ScaffoldingAPI\Infrastructure\Migrations\20240808202303_saveNetSuiteInfo.Designer.cs
+C:\Users\frena\Documents\Ditech\ScaffoldingAPI\Infrastructure\Migrations\20240810055218_modifyed MarketingCampaignEntity.cs
+C:\Users\frena\Documents\Ditech\ScaffoldingAPI\Infrastructure\Migrations\20240810055218_modifyed MarketingCampaignEntity.Designer.cs
+C:\Users\frena\Documents\Ditech\ScaffoldingAPI\Infrastructure\Migrations\20240812015732_MarketingTemplateEntity table added.cs
+C:\Users\frena\Documents\Ditech\ScaffoldingAPI\Infrastructure\Migrations\20240812015732_MarketingTemplateEntity table added.Designer.cs
+C:\Users\frena\Documents\Ditech\ScaffoldingAPI\Infrastructure\Migrations\20240812190007_HourForSendingAdded.cs
+C:\Users\frena\Documents\Ditech\ScaffoldingAPI\Infrastructure\Migrations\20240812190007_HourForSendingAdded.Designer.cs
+C:\Users\frena\Documents\Ditech\ScaffoldingAPI\Infrastructure\Migrations\20240812203201_addedTitleTemplate.cs
+C:\Users\frena\Documents\Ditech\ScaffoldingAPI\Infrastructure\Migrations\20240812203201_addedTitleTemplate.Designer.cs
+C:\Users\frena\Documents\Ditech\ScaffoldingAPI\Infrastructure\Migrations\20240815163837_FormValuesFiledAdded.cs
+C:\Users\frena\Documents\Ditech\ScaffoldingAPI\Infrastructure\Migrations\20240815163837_FormValuesFiledAdded.Designer.cs
+C:\Users\frena\Documents\Ditech\ScaffoldingAPI\Infrastructure\Migrations\20240826174216_metaConfigurationadded.cs
+C:\Users\frena\Documents\Ditech\ScaffoldingAPI\Infrastructure\Migrations\20240826174216_metaConfigurationadded.Designer.cs
+C:\Users\frena\Documents\Ditech\ScaffoldingAPI\Infrastructure\Migrations\20240828163918_fixRelationShip.cs
+C:\Users\frena\Documents\Ditech\ScaffoldingAPI\Infrastructure\Migrations\20240828163918_fixRelationShip.Designer.cs
+C:\Users\frena\Documents\Ditech\ScaffoldingAPI\Infrastructure\Migrations\20240828164243_fixRelationShip2.cs
+C:\Users\frena\Documents\Ditech\ScaffoldingAPI\Infrastructure\Migrations\20240828164243_fixRelationShip2.Designer.cs
+C:\Users\frena\Documents\Ditech\ScaffoldingAPI\Infrastructure\Migrations\20240902123208_addRecurrencing.cs
+C:\Users\frena\Documents\Ditech\ScaffoldingAPI\Infrastructure\Migrations\20240902123208_addRecurrencing.Designer.cs
+C:\Users\frena\Documents\Ditech\ScaffoldingAPI\Infrastructure\Migrations\20240902132002_fixedNames.cs
+C:\Users\frena\Documents\Ditech\ScaffoldingAPI\Infrastructure\Migrations\20240902132002_fixedNames.Designer.cs
+C:\Users\frena\Documents\Ditech\ScaffoldingAPI\Infrastructure\Migrations\SqlDbContextModelSnapshot.cs
+C:\Users\frena\Documents\Ditech\ScaffoldingAPI\Infrastructure\Repositories\AuthConfigRepository.cs
+C:\Users\frena\Documents\Ditech\ScaffoldingAPI\Infrastructure\Repositories\Interfaces\IAuthConfigRepository.cs
+C:\Users\frena\Documents\Ditech\ScaffoldingAPI\Infrastructure\Repositories\Interfaces\IPersonRepository.cs
+C:\Users\frena\Documents\Ditech\ScaffoldingAPI\Infrastructure\Repositories\LogRepository.cs
+C:\Users\frena\Documents\Ditech\ScaffoldingAPI\Infrastructure\Repositories\MembersRepository.cs
+C:\Users\frena\Documents\Ditech\ScaffoldingAPI\Infrastructure\Repositories\PersonRepository.cs
+C:\Users\frena\Documents\Ditech\ScaffoldingAPI\Infrastructure\Repositories\TimeEntryRepository.cs
+C:\Users\frena\Documents\Ditech\ScaffoldingAPI\Infrastructure\Repository\Interfaces\IRepository.cs
+C:\Users\frena\Documents\Ditech\ScaffoldingAPI\Infrastructure\Repository\Repository.cs
+C:\Users\frena\Documents\Ditech\ScaffoldingAPI\Infrastructure\UnitOfWork\Interfaces\IUnitOfWork.cs
+C:\Users\frena\Documents\Ditech\ScaffoldingAPI\Infrastructure\UnitOfWork\UnitOfWork.cs

@@ -1,0 +1,8 @@
+﻿C:\Users\frena\Documents\Ditech\ScaffoldingAPI\Common\Constant\Const.cs
+C:\Users\frena\Documents\Ditech\ScaffoldingAPI\Common\Enums\Enums.cs
+C:\Users\frena\Documents\Ditech\ScaffoldingAPI\Common\Exceptions\BusinessException.cs
+C:\Users\frena\Documents\Ditech\ScaffoldingAPI\Common\Exceptions\ExternalAuthorizationException.cs
+C:\Users\frena\Documents\Ditech\ScaffoldingAPI\Common\Exceptions\ExternalRequestException.cs
+C:\Users\frena\Documents\Ditech\ScaffoldingAPI\Common\Exceptions\HttpResponseException.cs
+C:\Users\frena\Documents\Ditech\ScaffoldingAPI\Common\Helpers\Helper.cs
+C:\Users\frena\Documents\Ditech\ScaffoldingAPI\Common\Resources\GeneralMessages.resx
