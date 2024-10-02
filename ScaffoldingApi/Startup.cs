@@ -1,4 +1,3 @@
-using Application;
 using Hangfire;
 using Hangfire.Dashboard;
 using Hangfire.SqlServer;
@@ -11,9 +10,7 @@ using Microsoft.OpenApi.Models;
 using MongoDB.Bson.Serialization.IdGenerators;
 using MongoDB.Bson.Serialization;
 using ScaffoldingApi.Handlers;
-using Infrastructure.Options;
-using Application.Interfaces;
-using Application.Tmetric;
+
 
 public class Startup
 {
@@ -54,15 +51,6 @@ public class Startup
                 DisableGlobalLocks = true
             }));
 
-        // Agregar autenticación básica para el dashboard de Hangfire
-        services.AddHangfireServer();
-
-        services.AddSingleton<IRecurringJobService, RecurringJobService>();
-        services.AddSingleton<IStaticRecurringJobService, StaticRecurringJobService>();
-        services.AddScoped<JobMethodsService>();
-
-
-
         // Registrar IMonitoringApi si es necesario
         services.AddSingleton<IMonitoringApi>(provider =>
         {
@@ -75,20 +63,11 @@ public class Startup
 
         #endregion
 
-        #region MongoDB
-        services.Configure<MongoDbSettings>(Configuration.GetSection("MongoDB"));
-        services.AddSingleton<MongoDbContext>();
-        BsonSerializer.RegisterIdGenerator(typeof(string), new StringObjectIdGenerator());
-
-        #endregion
-
         #region SQL Server Connection
         services.AddDbContext<SqlDbContext>(options =>
         {
             options.UseSqlServer(Configuration.GetConnectionString("SqlServer"));
         });
-        services.AddTransient<IMembersRequestService, MembersRequestService>();
-        services.AddTransient<ITmetricRequestService, TmetricRequestService>();
 
         #endregion
 
@@ -96,10 +75,6 @@ public class Startup
         DependencyInyectionHandler.DependencyInyectionConfig(services, Configuration);
         #endregion
 
-        #region JWT
-        var tokenAppSetting = Configuration.GetSection("Tokens");
-        JwtConfigurationHandler.ConfigureJwtAuthentication(services, tokenAppSetting);
-        #endregion
 
         #region CustimValidationFilterAttribute
         services.Configure<ApiBehaviorOptions>(options
@@ -164,26 +139,8 @@ public class Startup
     }
 
 
-    public void Configure(IApplicationBuilder app, IWebHostEnvironment env, IRecurringJobService recurringJobService, IStaticRecurringJobService staticRecurringJobService)
-    {
-
-        app.UseHangfireDashboard("/hangfire", new DashboardOptions
-        {
-            DashboardTitle = "Hangfire Dashboard",
-            Authorization = new[] { new HangfireAuthorizationFilter() }
-        });
-
-        app.UseHangfireServer();
-        if (Configuration["HangFire:Habilitado"] == "1")
-        {
-            // Programar los trabajos recurrentes dinámicos y estáticos
-            recurringJobService.ScheduleRecurringJobs();
-            staticRecurringJobService.ScheduleStaticRecurringJobs();
-        }
-
-
-
-
+    public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
+    {      
 
         // Configurar Hangfire Server
         // Enable middleware to serve generated Swagger as a JSON endpoint
