@@ -1,5 +1,6 @@
 ﻿using Application.Interfaces;
 using Core.DTOs;
+using Core.Entities;
 using Infrastructure.UnitOfWork.Interfaces;
 using System;
 using System.Collections.Generic;
@@ -31,6 +32,11 @@ namespace Application.Services
                 Summary = Summaries[Random.Shared.Next(Summaries.Length)]
             }).ToArray();
 
+        }
+
+        public IEnumerable<MarketingStatusEntity> Prueba()
+        {
+            return _unitOfWork.MarketingStatusRepository.GetAll();
         }
     }
 }

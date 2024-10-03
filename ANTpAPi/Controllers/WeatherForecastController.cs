@@ -18,7 +18,7 @@ namespace ANTpApi.Controllers
 
         [HttpGet(Name = "GetWeatherForecast")]
         public IEnumerable<WeatherForecast> Get()
-        {
+        {            
             return _weatherForecastService.Get();
         }
     }
