@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.0.31903.59
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ANTpApi", "ScaffoldingApi\ANTpApi.csproj", "{F874C191-543C-4ECD-84D7-9509F5778DAF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ANTpApi", "ANTpApi\ANTpApi.csproj", "{F874C191-543C-4ECD-84D7-9509F5778DAF}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Core", "Core\Core.csproj", "{3E4793F9-07BE-4668-9FF9-2C9DCCBBAD86}"
 EndProject

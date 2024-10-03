@@ -8,7 +8,7 @@
 
 La solución está organizada en múltiples capas y proyectos, cada uno con una responsabilidad específica:
 
-- **ScaffoldingApi**: Proyecto de la API ASP.NET Core. Contiene los controladores y la configuración de la aplicación.
+- **ANTpApi**: Proyecto de la API ASP.NET Core. Contiene los controladores y la configuración de la aplicación.
 - **Application**: Capa de aplicación. Contiene los servicios y la lógica de negocio.
 - **Domain**: Capa de dominio. Contiene las entidades y las interfaces de los repositorios.
 - **Infrastructure**: Capa de infraestructura. Contiene las implementaciones de los repositorios y el contexto de la base de datos.
@@ -34,7 +34,7 @@ La solución está organizada en múltiples capas y proyectos, cada uno con una 
    dotnet restore
    ```
 
-3. Configura las cadenas de conexión en `appsettings.json` en el proyecto `ScaffoldingApi`:
+3. Configura las cadenas de conexión en `appsettings.json` en el proyecto `ANTpApi`:
 
    ```json
    {
@@ -59,7 +59,7 @@ La solución está organizada en múltiples capas y proyectos, cada uno con una 
 2. Ejecuta la aplicación:
 
    ```bash
-   dotnet run --project ScaffoldingApi/ScaffoldingApi.csproj
+   dotnet run --project ANTpApi/ANTpApi.csproj
    ```
 
 3. Accede a Swagger para probar la API:
@@ -68,7 +68,7 @@ La solución está organizada en múltiples capas y proyectos, cada uno con una 
 
 ## Estructura del Código
 
-### ScaffoldingApi
+### ANTpApi
 
 - **Controllers**
   - `ProductController.cs`: Controlador para gestionar productos.
