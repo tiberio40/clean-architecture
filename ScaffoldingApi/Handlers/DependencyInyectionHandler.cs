@@ -20,10 +20,7 @@ namespace ANTpApi.Handlers
             services.AddScoped<CustomValidationFilterAttribute, CustomValidationFilterAttribute>();
             services.AddScoped<IUnitOfWork, UnitOfWork>();
             services.AddScoped(typeof(IRepository<>), typeof(Repository<>));
-            services.AddScoped<SeedDb>();
-
-            //Domain
-            //services.AddScoped<IUserServices, UserServices>();           
+            services.AddScoped<SeedDb>();     
 
         }
     }

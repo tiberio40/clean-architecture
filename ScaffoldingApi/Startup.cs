@@ -22,7 +22,11 @@ public class Startup
 
     public void ConfigureServices(IServiceCollection services)
     {
-        
+        #region Active Directory Azure
+        var azureSettings = Configuration.GetSection("AzureSettings");
+        ActiveDirectoryHandler.ConfigureActiveDirectory(services, azureSettings);
+        #endregion
+
 
         #region SQL Server Connection
         services.AddDbContext<SqlDbContext>(options =>
@@ -103,8 +107,6 @@ public class Startup
     public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
     {      
 
-        // Configurar Hangfire Server
-        // Enable middleware to serve generated Swagger as a JSON endpoint
         app.UseSwagger();
 
         // Enable middleware to serve swagger-ui (HTML, JS, CSS, etc.),
