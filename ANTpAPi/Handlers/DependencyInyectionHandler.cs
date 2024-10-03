@@ -1,4 +1,6 @@
-﻿using Infrastructure.Data;
+﻿using Application.Interfaces;
+using Application.Services;
+using Infrastructure.Data;
 using Infrastructure.Repository;
 using Infrastructure.Repository.Interfaces;
 using Infrastructure.UnitOfWork;
@@ -20,7 +22,11 @@ namespace ANTpApi.Handlers
             services.AddScoped<CustomValidationFilterAttribute, CustomValidationFilterAttribute>();
             services.AddScoped<IUnitOfWork, UnitOfWork>();
             services.AddScoped(typeof(IRepository<>), typeof(Repository<>));
-            services.AddScoped<SeedDb>();     
+            services.AddScoped<SeedDb>();
+
+            #region Domain
+            services.AddScoped<IWeatherForecastService, WeatherForecastService>();
+            #endregion
 
         }
     }

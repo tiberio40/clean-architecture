@@ -1,4 +1,5 @@
 ﻿
+using Core.Entities;
 using Infrastructure.Data;
 using Infrastructure.Repository;
 using Infrastructure.Repository.Interfaces;
@@ -22,13 +23,24 @@ namespace Infrastructure.UnitOfWork
         #endregion
 
         #region Properties  
+        private IRepository<MarketingStatusEntity> marketingStatusRepository;
 
         #endregion
 
 
         #region Members
 
-        
+        public IRepository<MarketingStatusEntity> MarketingStatusRepository
+        {
+            get
+            {
+                if (this.marketingStatusRepository == null)
+                    this.marketingStatusRepository = new Repository<MarketingStatusEntity>(_context);
+
+                return marketingStatusRepository;
+            }
+        }
+
         #endregion
 
         #region Base
