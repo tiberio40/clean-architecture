@@ -1,15 +1,10 @@
-using Hangfire;
-using Hangfire.Dashboard;
-using Hangfire.SqlServer;
-using Hangfire.Storage;
 using Infrastructure.Configurations;
 using Infrastructure.Data;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.OpenApi.Models;
-using MongoDB.Bson.Serialization.IdGenerators;
-using MongoDB.Bson.Serialization;
-using ScaffoldingApi.Handlers;
+using ANTpApi.Handlers;
+
 
 
 public class Startup
@@ -22,46 +17,12 @@ public class Startup
     public IConfiguration Configuration { get; }
 
 
-    public class HangfireAuthorizationFilter : IDashboardAuthorizationFilter
-    {
-        public bool Authorize(DashboardContext context)
-        {
-            // Implementa aquí tu lógica de autorización
-            // Por ejemplo, puedes verificar si el usuario está autenticado o si tiene un rol específico
-
-            // Ejemplo básico: permitir el acceso sin autenticación (para pruebas)
-            return true;
-        }
-    }
+    
 
 
     public void ConfigureServices(IServiceCollection services)
     {
-        #region Hangfire
-        services.AddHangfire(configuration => configuration
-            .SetDataCompatibilityLevel(CompatibilityLevel.Version_170)
-            .UseSimpleAssemblyNameTypeSerializer()
-            .UseRecommendedSerializerSettings()
-            .UseSqlServerStorage(Configuration.GetConnectionString("HangfireConnection"), new SqlServerStorageOptions
-            {
-                CommandBatchMaxTimeout = TimeSpan.FromMinutes(5),
-                SlidingInvisibilityTimeout = TimeSpan.FromMinutes(5),
-                QueuePollInterval = TimeSpan.Zero,
-                UseRecommendedIsolationLevel = true,
-                DisableGlobalLocks = true
-            }));
-
-        // Registrar IMonitoringApi si es necesario
-        services.AddSingleton<IMonitoringApi>(provider =>
-        {
-            var storage = provider.GetRequiredService<JobStorage>();
-            return storage.GetMonitoringApi();
-        });
-
-
-
-
-        #endregion
+        
 
         #region SQL Server Connection
         services.AddDbContext<SqlDbContext>(options =>

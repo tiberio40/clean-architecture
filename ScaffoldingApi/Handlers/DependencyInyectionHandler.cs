@@ -8,7 +8,7 @@ using Microsoft.Extensions.Options;
 
 
 
-namespace ScaffoldingApi.Handlers
+namespace ANTpApi.Handlers
 {
     public static class DependencyInyectionHandler
     {

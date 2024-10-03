@@ -1,0 +1,6 @@
+@ANTpApi = http://localhost:5286
+
+GET {{ANTpApi}}/weatherforecast/
+Accept: application/json
+
+###

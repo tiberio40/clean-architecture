@@ -7,7 +7,7 @@ using Microsoft.AspNetCore.Mvc.Filters;
 using Newtonsoft.Json;
 using Serilog;
 
-namespace ScaffoldingApi.Handlers
+namespace ANTpApi.Handlers
 {
     public class CustomExceptionHandler : ExceptionFilterAttribute
     {
