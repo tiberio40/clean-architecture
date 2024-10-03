@@ -2,7 +2,7 @@
 
 ## Descripción
 
-**ScaffoldingSolution** es un proyecto de ejemplo que implementa la arquitectura limpia (Clean Architecture) utilizando ASP.NET Core. Este proyecto demuestra cómo estructurar una aplicación web con separación de preocupaciones, utilizando una combinación de MongoDB y SQL Server como bases de datos.
+**ANTp** es un proyecto de ejemplo que implementa la arquitectura limpia (Clean Architecture) utilizando ASP.NET Core. Este proyecto demuestra cómo estructurar una aplicación web con separación de preocupaciones, utilizando SQL Server como bases de datos.
 
 ## Estructura del Proyecto
 
@@ -15,7 +15,7 @@ La solución está organizada en múltiples capas y proyectos, cada uno con una 
 
 ## Dependencias
 
-- [.NET 6.0](https://dotnet.microsoft.com/download/dotnet/6.0)
+- [.NET 8.0](https://dotnet.microsoft.com/download/dotnet/8.0)
 - [Entity Framework Core](https://docs.microsoft.com/en-us/ef/core/)
 - [MongoDB Driver](https://www.mongodb.com/docs/drivers/csharp/)
 - [Swashbuckle.AspNetCore](https://github.com/domaindrivendev/Swashbuckle.AspNetCore) (para Swagger)
