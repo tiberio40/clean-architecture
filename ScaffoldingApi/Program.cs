@@ -1,7 +1,7 @@
 ﻿using Infrastructure.Data;
 using Serilog;
 
-namespace ScaffoldingApi
+namespace ANTpApi
 {
     public class Program
     {

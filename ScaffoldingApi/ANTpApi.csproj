@@ -8,9 +8,13 @@
 
   <ItemGroup>
     <Compile Remove="Models\**" />
+    <Compile Remove="wwwroot\**" />
     <Content Remove="Models\**" />
+    <Content Remove="wwwroot\**" />
     <EmbeddedResource Remove="Models\**" />
+    <EmbeddedResource Remove="wwwroot\**" />
     <None Remove="Models\**" />
+    <None Remove="wwwroot\**" />
   </ItemGroup>
 
   <ItemGroup>
@@ -37,7 +41,6 @@
 
   <ItemGroup>
     <Folder Include="Logs\" />
-    <Folder Include="wwwroot\Files\Images\" />
   </ItemGroup>
 
 </Project>
